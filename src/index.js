@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from './store/createStore';
 import {Provider} from 'react-redux';
-import {Route} from 'react-router';
+//import {Route} from 'react-router';
 import {ConnectedRouter} from "react-router-redux";
 
 
