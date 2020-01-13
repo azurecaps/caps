@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/34257131-079a-4c50-b6e9-afe91e1f9ae4/resourceGroups/client/providers/Microsoft.Web/sites/rctcapsules"
+}

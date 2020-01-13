@@ -96,10 +96,10 @@ input {
   color:#cbd0d5;
   text-align: center;
 }
-
+// background: linear-gradient(21deg, #10abff, #1beabd); hadi dirha fl espace
 html::after {
   content:'';
-  background: linear-gradient(21deg, #10abff, #1beabd);
+
   height:3px;
   width:100%;
   position:absolute;
@@ -113,7 +113,7 @@ html {
   line-height:1.5;
   font-size:1em;
 }
-
+/*
 body {
   text-align: center;
   display:flex;
@@ -123,5 +123,5 @@ body {
 
 html, body {
   height:100%;
-}
+}*/
 

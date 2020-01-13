@@ -1,18 +1,38 @@
-// import React from 'react'
-// import { Route, IndexRoute } from 'react-router'
-// import Capsule from "../components/Capsule/Capsule";
-//
-// export const urls = {
-//     index: '/',
-//     notFound: '*',
-//     capsule : 'capsule',
-// };
-//
-// export const getRoutes = (store) => {
-//     return (
-//         <Route path={urls.index} component={Layout}>
-//             <IndexRoute component={capsule}/>
-//             <Route path={urls.notFound} component={NotFoundPage} onEnter={initCustomStore}/>
-//         </Route>
-//     );
-// }
+ import React from 'react'
+ import { Route, Switch} from 'react-router';
+ import LoginPage from '../Pages/Login/LoginPage';
+ import App from "../components/App";
+ import Capsule from "../components/Capsule/Capsule";
+ import HomePage from "../Pages/Home/HomePage";
+ // import {connectRouter} from "connected-react-router";
+
+
+ export const urls = {
+     index: '/',
+     notFound: '*',
+     Capsule : '/capsule',
+     LoginPage : 'LoginPage',
+     HomePage : '/HomePage',
+     App:'App'
+ };
+
+ export const getRoutes = (store) => {
+     return (
+         <Switch>
+             <Route exact path="/" component={App} />
+             <Route
+                 path={urls.LoginPage}
+                 component={LoginPage}
+             />
+             <Route
+                 path={urls.Capsule}
+                 component={Capsule}
+             />
+             <Route
+                 path={urls.HomePage}
+                 component={HomePage}
+             />
+         </Switch>
+
+     );
+ };

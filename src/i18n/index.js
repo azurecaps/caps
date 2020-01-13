@@ -8,7 +8,6 @@ export const messages = {
 
 export default function(id) {
     let lng = localStorage.getItem("lng");
-
     if (!lng) {
         return id;
     }

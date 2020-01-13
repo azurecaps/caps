@@ -1,12 +1,18 @@
 import { combineReducers } from "redux";
-//import { routerReducer } from "react-router-redux";
+import { routerReducer } from "react-router-redux";
+import { connectRouter } from 'connected-react-router';
 
 import {
-    CapsuleReducer
+    CapsuleReducer,
+    loginReducer,
+    NotionReducer,
 } from './../reducers';
 
-export const createReducer = () =>
+export const createReducer = (history) =>
     combineReducers({
         capsule: CapsuleReducer,
-      //  routing: routerReducer,
+        login: loginReducer,
+        router: connectRouter(history),
+        routing: routerReducer,
+        notion: NotionReducer,
     });

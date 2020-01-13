@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-// import _ from "./../../i18n";
 import './Capsule.scss';
+// import _ from "./../../i18n";
 
 class Capsule extends Component{
 
